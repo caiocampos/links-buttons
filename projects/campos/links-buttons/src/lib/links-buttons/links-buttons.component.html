@@ -1,0 +1,12 @@
+<span class="links-buttons-{{position}}">
+    <div>
+        <div class="text-{{direction}}" (click)="show=!show">
+            <span>{{text}}</span>
+        </div>
+        <div *ngIf="show" class="links">
+            <span>
+                <ng-content select="lb-link"></ng-content>
+            </span>
+        </div>
+    </div>
+</span>

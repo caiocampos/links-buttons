@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "12"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - npm run build-lib
+  - ng lint
+  - ng build --prod --base-href /links-buttons/
+  - cd dist/links-buttons
+  - cp index.html 404.html
+  - cd ../..
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: dist/links-buttons
+  on:
+    branch: master

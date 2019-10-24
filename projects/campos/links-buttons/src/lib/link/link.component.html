@@ -1,0 +1,12 @@
+<div class="link" *ngIf="link">
+    <a href="{{link}}">
+        <ng-container *ngIf="img; else plain">
+            <div>
+                <img src="{{img}}" alt="{{text}}" title="{{text}}" />
+            </div>
+        </ng-container>
+        <ng-template #plain>
+            <div>{{text}}</div>
+        </ng-template>
+    </a>
+</div>
