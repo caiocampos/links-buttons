@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {LinksButtonsModule} from '../../projects/campos/links-buttons/src/lib/links-buttons.module';
+import {LinksButtonsModule} from '../../projects/caiocampos/links-buttons/src/lib/links-buttons.module';
 
 import { AppComponent } from './app.component';
 

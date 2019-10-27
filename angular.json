@@ -83,33 +83,33 @@
         }
       }
     },
-    "@campos/links-buttons": {
+    "@caiocampos/links-buttons": {
       "projectType": "library",
-      "root": "projects/campos/links-buttons",
-      "sourceRoot": "projects/campos/links-buttons/src",
+      "root": "projects/caiocampos/links-buttons",
+      "sourceRoot": "projects/caiocampos/links-buttons/src",
       "prefix": "lb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/campos/links-buttons/tsconfig.lib.json",
-            "project": "projects/campos/links-buttons/ng-package.json"
+            "tsConfig": "projects/caiocampos/links-buttons/tsconfig.lib.json",
+            "project": "projects/caiocampos/links-buttons/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/campos/links-buttons/src/test.ts",
-            "tsConfig": "projects/campos/links-buttons/tsconfig.spec.json",
-            "karmaConfig": "projects/campos/links-buttons/karma.conf.js"
+            "main": "projects/caiocampos/links-buttons/src/test.ts",
+            "tsConfig": "projects/caiocampos/links-buttons/tsconfig.spec.json",
+            "karmaConfig": "projects/caiocampos/links-buttons/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/campos/links-buttons/tsconfig.lib.json",
-              "projects/campos/links-buttons/tsconfig.spec.json"
+              "projects/caiocampos/links-buttons/tsconfig.lib.json",
+              "projects/caiocampos/links-buttons/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "@campos/links-buttons": [
-        "dist/campos/links-buttons"
+      "@caiocampos/links-buttons": [
+        "dist/caiocampos/links-buttons"
       ],
-      "@campos/links-buttons/*": [
-        "dist/campos/links-buttons/*"
+      "@caiocampos/links-buttons/*": [
+        "dist/caiocampos/links-buttons/*"
       ]
     }
   },
