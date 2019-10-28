@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
       <lb-link
         link="https://github.com/caiocampos/links-buttons"
         text="Código fonte"
-        img="https://caiocampos.github.io/assets/img/github/mark/GitHub-Mark-Light-120px-plus.png"
+        img="https://caiocampos.github.io/assets/img/github/mark/GitHub-Mark-120px-plus.png"
       ></lb-link>
     </lb-group>
   `,
