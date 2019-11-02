@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "12"
-dist: trusty
+dist: bionic
 sudo: required
 
 branches:
@@ -19,10 +19,20 @@ script:
   - cp index.html 404.html
   - cd ../..
 
+before_deploy:
+  - cd dist/caiocampos/links-buttons
+
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: dist/links-buttons
-  on:
-    branch: master
+  - provider: pages
+    skip_cleanup: true
+    github-token: $GITHUB_TOKEN
+    local_dir: ../../links-buttons
+    on:
+      branch: master
+  - provider: npm
+    skip_cleanup: true
+    api_key: $NPM_TOKEN
+    email: "caio.campos1204@gmail.com"
+    tag: next
+    on:
+      branch: master
