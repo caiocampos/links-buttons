@@ -11,18 +11,16 @@ branches:
 before_script:
   - npm install -g @angular/cli
 
-script:
-  - npm run build-lib
-  - ng lint
-  - ng build --prod --base-href /links-buttons/
-  - cd dist/links-buttons
-  - cp index.html 404.html
-  - cd ../..
-
 jobs:
   include:
     - stage: pages
-      script: skip
+      script:
+        - npm run build-lib
+        - ng lint
+        - ng build --prod --base-href /links-buttons/
+        - cd dist/links-buttons
+        - cp index.html 404.html
+        - cd ../..
       deploy: &pages
         provider: pages
         skip_cleanup: true
@@ -31,7 +29,8 @@ jobs:
         on:
           branch: master
     - stage: npm
-      script: skip
+      script:
+        - npm run build-lib
       before_deploy:
         - cd dist/caiocampos/links-buttons
       deploy: &npm
