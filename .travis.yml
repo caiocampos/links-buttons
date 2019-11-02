@@ -8,17 +8,19 @@ branches:
   only:
   - master
 
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - npm run build-lib
+  - ng lint
+  - ng build --prod --base-href /links-buttons/
+  - cd dist/links-buttons
+  - cp index.html 404.html
+  - cd ../..
+
 jobs:
   include:
-    - before_script:
-        - npm install -g @angular/cli
-    - script:
-        - npm run build-lib
-        - ng lint
-        - ng build --prod --base-href /links-buttons/
-        - cd dist/links-buttons
-        - cp index.html 404.html
-        - cd ../..
     - stage: pages
       script: skip
       deploy: &pages
