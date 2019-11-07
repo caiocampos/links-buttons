@@ -30,12 +30,12 @@
     "@angular/cli": "^8.3.17",
     "@angular/compiler-cli": "^8.2.13",
     "@angular/language-service": "~8.2.13",
-    "@types/node": "^12.12.5",
+    "@types/node": "^12.12.6",
     "codelyzer": "^5.2.0",
     "ng-packagr": "^5.7.1",
     "ts-node": "~8.4.1",
     "tsickle": "^0.37.0",
-    "tslint": "~5.20.0",
+    "tslint": "~5.20.1",
     "typescript": "^3.5.3"
   }
 }
