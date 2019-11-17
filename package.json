@@ -29,7 +29,7 @@
     "@angular-devkit/build-ng-packagr": "~0.803.18",
     "@angular/cli": "^8.3.17",
     "@angular/compiler-cli": "^8.2.13",
-    "@angular/language-service": "~8.2.13",
+    "@angular/language-service": "~8.2.14",
     "@types/node": "^12.12.7",
     "codelyzer": "^5.2.0",
     "ng-packagr": "^5.7.1",
