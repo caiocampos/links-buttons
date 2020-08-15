@@ -1,9 +1,9 @@
 {
   "name": "@caiocampos/links-buttons",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "peerDependencies": {
-    "@angular/common": ">=9 <= 9.1.6",
-    "@angular/core": ">=9 <= 9.1.6"
+    "@angular/common": ">=10 <= 10.0.9",
+    "@angular/core": ">=10 <= 10.0.9"
   },
   "repository": {
     "type": "git",
@@ -11,5 +11,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }
