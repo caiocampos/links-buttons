@@ -30,7 +30,7 @@
     "@angular/cli": "^12.2.9",
     "@angular/compiler-cli": "^12.2.8",
     "@angular/language-service": "~12.2.1",
-    "@types/node": "^16.10.5",
+    "@types/node": "^16.10.9",
     "codelyzer": "^6.0.2",
     "eslint": "~8.0.0",
     "ng-packagr": "^12.2.3",
