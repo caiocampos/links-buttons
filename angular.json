@@ -106,18 +106,6 @@
             "tsConfig": "projects/caiocampos/links-buttons/tsconfig.spec.json",
             "karmaConfig": "projects/caiocampos/links-buttons/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/caiocampos/links-buttons/tsconfig.lib.json",
-              "projects/caiocampos/links-buttons/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     }
