@@ -2,8 +2,8 @@
   "name": "@caiocampos/links-buttons",
   "version": "0.0.10",
   "peerDependencies": {
-    "@angular/common": "~12",
-    "@angular/core": "~12"
+    "@angular/common": "~14",
+    "@angular/core": "~14"
   },
   "repository": {
     "type": "git",
