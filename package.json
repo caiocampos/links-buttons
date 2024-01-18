@@ -33,7 +33,7 @@
     "@types/node": "^20.10.4",
     "codelyzer": "^6.0.2",
     "eslint": "~8.56.0",
-    "ng-packagr": "^16.2.0",
+    "ng-packagr": "^17.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^4.8.4",
     "webpack-sources": "^3.2.3"
