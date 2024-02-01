@@ -29,7 +29,7 @@
     "@angular-devkit/build-angular": "^16.1.5",
     "@angular/cli": "^16.2.4",
     "@angular/compiler-cli": "^16.2.7",
-    "@angular/language-service": "^16.1.5",
+    "@angular/language-service": "^17.1.2",
     "@types/node": "^20.10.4",
     "codelyzer": "^6.0.2",
     "eslint": "~8.56.0",
